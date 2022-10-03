@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+</head>
+
+<body>
+    <header>
+        <h2>Welcome to my blog website</h2>
+    </header>
+
+    <main>
+        <section>
+            <article>
+                <h3>My Blog-1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, explicabo.</p>
+            </article>
+            <article>
+                <h3>My Blog-2</h3>
+                <p>Qui ipsa cupiditate magni repellendus consequatur soluta perspiciatis non quia?</p>
+            </article>
+            <article>
+                <h3>My Blog-3</h3>
+                <p>Dicta tempore accusantium vel repellat ea quia magnam impedit fuga.</p>
+            </article>
+        </section>
+    </main>
+
+
+    <script>
+
+        const student = { name: "Kissmot Ali", age: 16, height: 50 }
+
+        // console.log(document.body);
+
+        const blogTitles = document.getElementsByTagName("h3");
+
+        console.log(blogTitles);
+
+        for (const h3 of blogTitles) {
+            console.log(h3.innerText);
+        }
+
+        // const blogDetails = document.getElementsByTagName("p");
+
+        // console.log(blogDetails);
+
+        // for (const p of blogDetails) {
+        //     console.log(p.innerText)
+        // }
+
+
+
+        const blogDetails = document.getElementsByTagName("p");
+
+
+        for (const p of blogDetails) {
+            console.log(p.innerText);
+        }
+
+
+    </script>
+</body>
+
+</html>
